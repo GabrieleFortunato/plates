@@ -9,8 +9,8 @@
 
 static bool is_valid_plate(char* plate){
 	bool flag = true;
-	for (int i=ZERO;i<strlen(plate)&&flag;)
-		flag = isalnum(plate[i++]);
+	for (int i=ZERO;i<strlen(plate)&&flag;i++)
+		flag = isalnum(plate[i]);
 	return true;
 }
 

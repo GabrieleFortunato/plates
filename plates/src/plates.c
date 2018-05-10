@@ -17,8 +17,7 @@ static bool is_valid_plate(char* plate){
 static bool are_valid_chars_old_plate(char* plate){
 	bool flag = true;
 	for (int i=ZERO;i<strlen(plate)&&flag;i++)
-		flag = (i==ZERO||i==ONE)?isupper(plate[i]):
-				(i==TWO)?isalnum(plate[i]):isdigit(plate[i]);
+		flag = (i==ZERO||i==ONE)?isupper(plate[i]):(i==TWO)?isalnum(plate[i]):isdigit(plate[i]);
 	return flag;
 }
 
@@ -37,8 +36,7 @@ static bool index_to_upper(int i){
 static bool are_valid_chars_new_plate(char* plate){
 	bool flag = true;
 	for (int i=ZERO;i<strlen(plate)&&flag;i++)
-		flag=(index_to_upper(i))?
-				(isupper(plate[i])&&is_valid_char(plate[i])):isdigit(plate[i]);
+		flag=(index_to_upper(i))?(isupper(plate[i])&&is_valid_char(plate[i])):isdigit(plate[i]);
 	return flag;
 }
 
@@ -52,8 +50,7 @@ static bool is_valid_result(plate_t result){
 
 plate_t check_plate(char* plate){
 	assert(plate!=NULL&&is_valid_plate(plate));
-	plate_t result = (is_new_plate(plate))?NEW_PLATE:
-			(is_old_plate(plate))?OLD_PLATE:UNRECOGNIZED;
+	plate_t result = (is_new_plate(plate))?NEW_PLATE:(is_old_plate(plate))?OLD_PLATE:UNRECOGNIZED;
 	assert(is_valid_result(result));
 	return result;
 }

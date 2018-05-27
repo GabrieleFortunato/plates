@@ -14,18 +14,18 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define ZERO              0
-#define ONE               1
-#define TWO               2
-#define FIVE              5
-#define SIX               6
-#define NEW_PLATE_LENGTH  7
-#define OLD_PLATE_LENGTH  8
-#define G 				  'G'
-#define I 				  'I'
-#define O 				  'O'
-#define Q 				  'Q'
-#define U 				  'U'
+#define ZERO                 0
+#define ONE               	 1
+#define TWO	              	 2
+#define FIVE              	 5
+#define SIX               	 6
+#define NEW_PLATE_LENGTH     7
+#define OLD_PLATE_LENGTH     8
+#define G 					'G'
+#define I 					'I'
+#define O 					'O'
+#define Q 					'Q'
+#define U 					'U'
 
 /**
  * Tipo di targa

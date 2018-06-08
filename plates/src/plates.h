@@ -14,19 +14,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define ZERO        0
-#define ONE         1
-#define TWO         2
-#define FIVE        5
-#define SIX         6
-#define NEW_LENGTH  7
-#define OLD_LENGTH  8
-#define G           'G'
-#define I           'I'
-#define O           'U'
-#define Q           'Q'
-#define U           'I'
-
 /**
  * Tipo di targa
  */
@@ -35,8 +22,6 @@ typedef enum{
 	OLD_PLATE,   //!< Targa di vecchio tipo (CCNNNNNN)
 	UNRECOGNIZED,//!< Targa di tipo sconosciuto
 } plate_t;
-
-bool is_new_plate(char* plate);
 
 /**
  * Restituisce il tipo di targa.

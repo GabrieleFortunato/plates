@@ -58,7 +58,8 @@ static bool is_new_plate(char* plate){
 plate_t check_plate(char* plate){
 	assert(plate!=NULL);
 	assert(is_valid_plate(plate));
-	plate_t result = (is_old_plate(plate))?OLD_PLATE:(is_new_plate(plate))?NEW_PLATE:UNRECOGNIZED;
+	plate_t result = (is_old_plate(plate)) ? OLD_PLATE :
+			(is_new_plate(plate)) ? NEW_PLATE:UNRECOGNIZED;
 	assert(result==NEW_PLATE||result==OLD_PLATE||result==UNRECOGNIZED);
 	return result;
 }

@@ -13,6 +13,12 @@
 #include "plates.h"
 #include <stdio.h>
 
+static const char* UNRECOGNIZED_PLATES = "unrecognized plates";
+static const char* NEW_PLATES = "new plates";
+static const char* OLD_PLATES = "old plates";
+static const char* PLATES = "Plates";
+static const int ZERO = 0;
+
 char* oldPlates[] = {
 	"AZ000000",
 	"ZA999999",
@@ -46,58 +52,51 @@ char* unrPlates[] = {
 };
 
 void test_old_plates(void){
-	int n_elements = sizeof(oldPlates) / sizeof(oldPlates[0]);
-	for(int i=0; i<n_elements; i++)
+	for (int i = ZERO; i < sizeof(oldPlates) / sizeof(oldPlates[ZERO]); i++)
 		CU_ASSERT_EQUAL(check_plate(oldPlates[i]), OLD_PLATE);
 }
 
 void test_new_plates(void){
-	int n_elements = sizeof(newPlates) / sizeof(newPlates[0]);
-	for(int i=0; i<n_elements; i++)
+	for (int i = ZERO; i < sizeof(newPlates) / sizeof(newPlates[ZERO]); i++)
 		CU_ASSERT_EQUAL(check_plate(newPlates[i]), NEW_PLATE);
 }
 
 void test_unr_plates(void){
-	int n_elements = sizeof(unrPlates) / sizeof(unrPlates[0]);
-	for(int i=0; i<n_elements; i++)
+	for (int i = ZERO; i < sizeof(unrPlates) / sizeof(unrPlates[ZERO]); i++)
 		CU_ASSERT_EQUAL(check_plate(unrPlates[i]), UNRECOGNIZED);
 }
-
 
 /*
  * Funzioni di inizializzazione e pulizia delle suite.
  * Di default sono funzioni vuote.
  */
-int init_suite_default(void)
-{
-	return 0;
+int init_suite_default(void){
+	return ZERO;
 }
 
-int clean_suite_default(void)
-{
-	return 0;
+int clean_suite_default(void){
+	return ZERO;
 }
 
 /* **************************************************
  *	TEST di UNITA'
  */
 
-int main()
-{
+int main(){
 
 	/* inizializza registro - e' la prima istruzione */
 	CU_initialize_registry();
 
 	/* Aggiungi le suite al test registry */
-	CU_pSuite pSuite_wd = CU_add_suite("Old plates", init_suite_default,
+	CU_pSuite pSuite_wd = CU_add_suite(PLATES, init_suite_default,
 			clean_suite_default);
 
 	/* Aggiungi i test alle suite
 	 * NOTA - L'ORDINE DI INSERIMENTO E' IMPORTANTE
 	 */
-	CU_add_test(pSuite_wd, "old plates", test_old_plates);
-	CU_add_test(pSuite_wd, "new plates", test_new_plates);
-	CU_add_test(pSuite_wd, "unrecognized plates", test_unr_plates);
+	CU_add_test(pSuite_wd, OLD_PLATES, test_old_plates);
+	CU_add_test(pSuite_wd, NEW_PLATES, test_new_plates);
+	CU_add_test(pSuite_wd, UNRECOGNIZED_PLATES, test_unr_plates);
 
 	/* Esegue tutti i casi di test con output sulla console */
 	CU_basic_set_mode(CU_BRM_VERBOSE);

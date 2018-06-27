@@ -1,0 +1,43 @@
+\hypertarget{plates_8c}{}\section{src/plates.c File Reference}
+\label{plates_8c}\index{src/plates.\+c@{src/plates.\+c}}
+{\ttfamily \#include \char`\"{}plates.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{plates_8h_a608288618c5b5172173c5d74b76792ea}{plate\+\_\+t} \hyperlink{plates_8c_a852a563847b56fee37d2b95291da9067}{check\+\_\+plate} (char $\ast$plate)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{plates_8c_a852a563847b56fee37d2b95291da9067}\label{plates_8c_a852a563847b56fee37d2b95291da9067}} 
+\index{plates.\+c@{plates.\+c}!check\+\_\+plate@{check\+\_\+plate}}
+\index{check\+\_\+plate@{check\+\_\+plate}!plates.\+c@{plates.\+c}}
+\subsubsection{\texorpdfstring{check\+\_\+plate()}{check\_plate()}}
+{\footnotesize\ttfamily \hyperlink{plates_8h_a608288618c5b5172173c5d74b76792ea}{plate\+\_\+t} check\+\_\+plate (\begin{DoxyParamCaption}\item[{char $\ast$}]{plate }\end{DoxyParamCaption})}
+
+Restituisce il tipo di targa. La funzione riconosce due soli tipi di targa\+: vecchio tipo o nuovo tipo. Per targhe di vecchio tipo, il metodo restituisce O\+L\+D\+\_\+\+P\+L\+A\+TE; per targhe di nuovo tipo il metodo restituisce N\+E\+W\+\_\+\+P\+L\+A\+TE. Se la funzione non riconosce il tipo di targa, restituisce U\+N\+R\+E\+C\+O\+G\+N\+I\+Z\+ED. 
+
+T\+A\+R\+G\+HE DI V\+E\+C\+C\+H\+IO T\+I\+PO ~\newline
+ Una targa di vecchio tipo e\textquotesingle{} costituita da 8 caratteri. I primi due caratteri sono lettere, gli ultimi cinque caratteri sono cifre. Il terzo carattere puo\textquotesingle{} essere lettera o cifra. 
+
+T\+A\+R\+G\+HE DI N\+U\+O\+VO T\+I\+PO ~\newline
+ Una targa di nuovo tipo e\textquotesingle{} costituita da 7 caratteri. I primi due caratteri e gli ultimi due caratteri sono lettere A\+M\+M\+E\+S\+SE. I tre caratteri centrali sono cifre. Le lettere ammesse sono tutte le lettere dell\textquotesingle{}alfabeto T\+R\+A\+N\+NE\+: G\+I\+O\+QU 
+
+\begin{DoxyPrecond}{Precondition}
+plate non puo\textquotesingle{} essere null e deve essere costituita esclusivamente da caratteri alfanumerici. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+il valore restituito puo\textquotesingle{} essere solo O\+L\+D\+\_\+\+P\+L\+A\+TE, N\+E\+W\+\_\+\+P\+L\+A\+TE oppure U\+N\+R\+E\+C\+O\+G\+N\+I\+Z\+ED. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em plate} & la targa automobilistica \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+il tipo di targa 
+\end{DoxyReturn}
+
+
+Definition at line 58 of file plates.\+c.
+

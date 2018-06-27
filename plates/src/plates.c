@@ -7,8 +7,8 @@
 
 #include "plates.h"
 
-static const int SIX = 6;
-static const int FIVE = 5;
+static const int FOUR = 4;
+static const int THREE = 3;
 static const char U = 'U';
 static const char Q = 'Q';
 static const char O = 'O';
@@ -27,7 +27,7 @@ static bool is_valid_plate(char* plate){
 	return flag;
 }
 
-static bool is_valid_alpha(char a,int i){
+static bool is_valid_alpha(char a){
 	return isalpha(a) && a != G && a != I && a != O && a != Q && a != U;
 }
 
@@ -42,8 +42,8 @@ static bool are_valid_chars_old_plate(char* plate){
 static bool are_valid_chars_new_plate(char* plate){
 	bool flag = true;
 	for (int i = ZERO; i < strlen(plate) && flag; i++)
-		flag = (i == ZERO || i == ONE || i == FIVE || i == SIX) ?
-				is_valid_alpha(plate[i],i) : isdigit(plate[i]);
+		flag = (i == TWO || i == THREE || i == FOUR) ?
+				isdigit(plate[i]) : is_valid_alpha(plate[i]);
 	return flag;
 }
 
@@ -60,6 +60,6 @@ plate_t check_plate(char* plate){
 	assert(is_valid_plate(plate));
 	plate_t result = (is_old_plate(plate)) ? OLD_PLATE :
 			(is_new_plate(plate)) ? NEW_PLATE:UNRECOGNIZED;
-	assert(result==NEW_PLATE||result==OLD_PLATE||result==UNRECOGNIZED);
+	assert(result==NEW_PLATE || result==OLD_PLATE || result == UNRECOGNIZED);
 	return result;
 }

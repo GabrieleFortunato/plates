@@ -55,10 +55,14 @@ static bool is_old_plate(char* plate){
 	return strlen(plate) == OLD_PLATE_LENGTH && are_valid_chars_old_plate(plate);
 }
 
+static bool is_valid_result(plate_t result){
+	return result == NEW_PLATE || result == OLD_PLATE || result == UNRECOGNIZED;
+}
+
 plate_t check_plate(char* plate){
 	assert(plate!=NULL);
 	assert(is_valid_plate(plate));
 	plate_t result = is_new_plate(plate) ? NEW_PLATE : is_old_plate(plate) ? OLD_PLATE : UNRECOGNIZED;
-	assert(result == NEW_PLATE || result == OLD_PLATE || result == UNRECOGNIZED);
+	assert(is_valid_result(result));
 	return result;
 }

@@ -1,0 +1,49 @@
+\hypertarget{plates_8c}{\section{src/plates.c File Reference}
+\label{plates_8c}\index{src/plates.\-c@{src/plates.\-c}}
+}
+{\ttfamily \#include \char`\"{}plates.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{plates_8h_a608288618c5b5172173c5d74b76792ea}{plate\-\_\-t} \hyperlink{plates_8c_a852a563847b56fee37d2b95291da9067}{check\-\_\-plate} (char $\ast$plate)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{plates_8c_a852a563847b56fee37d2b95291da9067}{\index{plates.\-c@{plates.\-c}!check\-\_\-plate@{check\-\_\-plate}}
+\index{check\-\_\-plate@{check\-\_\-plate}!plates.c@{plates.\-c}}
+\subsubsection[{check\-\_\-plate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf plate\-\_\-t} check\-\_\-plate (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{plate}
+\end{DoxyParamCaption}
+)}}\label{plates_8c_a852a563847b56fee37d2b95291da9067}
+Restituisce il tipo di targa. La funzione riconosce due soli tipi di targa\-: vecchio tipo o nuovo tipo. Per targhe di vecchio tipo, il metodo restituisce O\-L\-D\-\_\-\-P\-L\-A\-T\-E; per targhe di nuovo tipo il metodo restituisce N\-E\-W\-\_\-\-P\-L\-A\-T\-E. Se la funzione non riconosce il tipo di targa, restituisce U\-N\-R\-E\-C\-O\-G\-N\-I\-Z\-E\-D. 
+
+T\-A\-R\-G\-H\-E D\-I V\-E\-C\-C\-H\-I\-O T\-I\-P\-O \par
+ Una targa di vecchio tipo e' costituita da 8 caratteri. I primi due caratteri sono lettere, gli ultimi cinque caratteri sono cifre. Il terzo carattere puo' essere lettera o cifra. 
+
+T\-A\-R\-G\-H\-E D\-I N\-U\-O\-V\-O T\-I\-P\-O \par
+ Una targa di nuovo tipo e' costituita da 7 caratteri. I primi due caratteri e gli ultimi due caratteri sono lettere A\-M\-M\-E\-S\-S\-E. I tre caratteri centrali sono cifre. Le lettere ammesse sono tutte le lettere dell'alfabeto T\-R\-A\-N\-N\-E\-: G\-I\-O\-Q\-U 
+
+\begin{DoxyPrecond}{Precondition}
+plate non puo' essere null e deve essere costituita esclusivamente da caratteri alfanumerici. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+il valore restituito puo' essere solo O\-L\-D\-\_\-\-P\-L\-A\-T\-E, N\-E\-W\-\_\-\-P\-L\-A\-T\-E oppure U\-N\-R\-E\-C\-O\-G\-N\-I\-Z\-E\-D. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em plate} & la targa automobilistica \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+il tipo di targa 
+\end{DoxyReturn}
+
+
+Definition at line 58 of file plates.\-c.
+
+
+
+References N\-E\-W\-\_\-\-P\-L\-A\-T\-E, O\-L\-D\-\_\-\-P\-L\-A\-T\-E, and U\-N\-R\-E\-C\-O\-G\-N\-I\-Z\-E\-D.
+

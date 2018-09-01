@@ -61,6 +61,8 @@ void test_new_plates(void){
 		CU_ASSERT_EQUAL(check_plate(newPlates[i]), NEW_PLATE);
 }
 
+#include <stdio.h>
+
 void test_unr_plates(void){
 	for (int i = ZERO; i < sizeof(unrPlates) / sizeof(unrPlates[ZERO]); i++)
 		CU_ASSERT_EQUAL(check_plate(unrPlates[i]), UNRECOGNIZED);

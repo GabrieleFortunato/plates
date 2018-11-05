@@ -66,6 +66,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="globals.html"><span>All</span></a></li>
       <li class="current"><a href="globals_func.html"><span>Functions</span></a></li>
+      <li><a href="globals_vars.html"><span>Variables</span></a></li>
       <li><a href="globals_enum.html"><span>Enumerations</span></a></li>
       <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
     </ul>
@@ -76,7 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,15 +88,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="contents">
 &#160;<ul>
+<li>are_new_plate_chars()
+: <a class="el" href="plates_8c.html#aefb5c84943a88209019742e00e76ee2c">plates.c</a>
+</li>
+<li>are_old_plate_chars()
+: <a class="el" href="plates_8c.html#aa07273105744fe166f7692630a61d95e">plates.c</a>
+</li>
 <li>check_plate()
 : <a class="el" href="plates_8c.html#a852a563847b56fee37d2b95291da9067">plates.c</a>
 , <a class="el" href="plates_8h.html#a852a563847b56fee37d2b95291da9067">plates.h</a>
+</li>
+<li>is_new_plate()
+: <a class="el" href="plates_8c.html#a0fffa045e7fe6bf2ae2ebd99b6cb360b">plates.c</a>
+</li>
+<li>is_new_plate_alpha()
+: <a class="el" href="plates_8c.html#a382527283ecc9659d5b942bf5352ec6a">plates.c</a>
+</li>
+<li>is_old_plate()
+: <a class="el" href="plates_8c.html#a87a862a53715092f7e04604160f4849e">plates.c</a>
+</li>
+<li>is_valid_plate()
+: <a class="el" href="plates_8c.html#a585dcc4a0787ccdba08c3d80f47d553e">plates.c</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 1 2018 10:17:33 for plates by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 19 2018 12:38:16 for plates by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

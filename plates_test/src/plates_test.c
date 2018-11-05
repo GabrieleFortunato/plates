@@ -52,20 +52,20 @@ char* unrPlates[] = {
 };
 
 void test_old_plates(void){
-	for (int i = ZERO; i < sizeof(oldPlates) / sizeof(oldPlates[ZERO]); i++)
-		CU_ASSERT_EQUAL(check_plate(oldPlates[i]), OLD_PLATE);
+	for (int i = ZERO; i < sizeof(oldPlates) / sizeof(oldPlates[ZERO]);)
+		CU_ASSERT_EQUAL(check_plate(oldPlates[i++]), OLD_PLATE);
 }
 
 void test_new_plates(void){
-	for (int i = ZERO; i < sizeof(newPlates) / sizeof(newPlates[ZERO]); i++)
-		CU_ASSERT_EQUAL(check_plate(newPlates[i]), NEW_PLATE);
+	for (int i = ZERO; i < sizeof(newPlates) / sizeof(newPlates[ZERO]);)
+		CU_ASSERT_EQUAL(check_plate(newPlates[i++]), NEW_PLATE);
 }
 
 #include <stdio.h>
 
 void test_unr_plates(void){
-	for (int i = ZERO; i < sizeof(unrPlates) / sizeof(unrPlates[ZERO]); i++)
-		CU_ASSERT_EQUAL(check_plate(unrPlates[i]), UNRECOGNIZED);
+	for (int i = ZERO; i < sizeof(unrPlates) / sizeof(unrPlates[ZERO]);)
+		CU_ASSERT_EQUAL(check_plate(unrPlates[i++]), UNRECOGNIZED);
 }
 
 /*
@@ -109,4 +109,5 @@ int main(){
 
 	return CU_get_error();
 }
+
 

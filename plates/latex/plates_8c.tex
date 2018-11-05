@@ -5,11 +5,88 @@
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
+static bool \hyperlink{plates_8c_a585dcc4a0787ccdba08c3d80f47d553e}{is\-\_\-valid\-\_\-plate} (char $\ast$plate)
+\item 
+static bool \hyperlink{plates_8c_aa07273105744fe166f7692630a61d95e}{are\-\_\-old\-\_\-plate\-\_\-chars} (char $\ast$plate)
+\item 
+static bool \hyperlink{plates_8c_a87a862a53715092f7e04604160f4849e}{is\-\_\-old\-\_\-plate} (char $\ast$plate)
+\item 
+static bool \hyperlink{plates_8c_a382527283ecc9659d5b942bf5352ec6a}{is\-\_\-new\-\_\-plate\-\_\-alpha} (char a)
+\item 
+static bool \hyperlink{plates_8c_aefb5c84943a88209019742e00e76ee2c}{are\-\_\-new\-\_\-plate\-\_\-chars} (char $\ast$plate)
+\item 
+static bool \hyperlink{plates_8c_a0fffa045e7fe6bf2ae2ebd99b6cb360b}{is\-\_\-new\-\_\-plate} (char $\ast$plate)
+\item 
 \hyperlink{plates_8h_a608288618c5b5172173c5d74b76792ea}{plate\-\_\-t} \hyperlink{plates_8c_a852a563847b56fee37d2b95291da9067}{check\-\_\-plate} (char $\ast$plate)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const char \hyperlink{plates_8c_a90784a38cd61f391acb0d43bac12558d}{U} = 'U'
+\item 
+static const char \hyperlink{plates_8c_a4d06d3a985405e7462b24cd6f56dbe9e}{Q} = 'Q'
+\item 
+static const char \hyperlink{plates_8c_ada65313d692e42532499ce96bd3150e7}{O} = 'O'
+\item 
+static const char \hyperlink{plates_8c_ab9cfcf92a6915b736872d475dd536aa6}{I} = 'I'
+\item 
+static const char \hyperlink{plates_8c_ad3f36f27e64ed5982c93a5856e2134b5}{G} = 'G'
+\item 
+static const int \hyperlink{plates_8c_a282ba01a8497073d8c8eff05b4f03a35}{E\-I\-G\-H\-T} = 8
+\item 
+static const int \hyperlink{plates_8c_a2c23ca53fc5922ec38516328d442c761}{S\-E\-V\-E\-N} = 7
+\item 
+static const int \hyperlink{plates_8c_a155c590b838ec51b170af77c3cf4752b}{F\-O\-U\-R} = 4
+\item 
+static const int \hyperlink{plates_8c_a1310f39e29bae777ed061629efde0f8e}{T\-H\-R\-E\-E} = 3
+\item 
+static const int \hyperlink{plates_8c_a611b700be7e491d94ecc6fc196a6099f}{T\-W\-O} = 2
+\item 
+static const int \hyperlink{plates_8c_a03732b1f90df5c759962ce41dd8046ac}{O\-N\-E} = 1
+\item 
+static const int \hyperlink{plates_8c_acdb9580f8c1b2955aa58958261a6c582}{Z\-E\-R\-O} = 0
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
+\hypertarget{plates_8c_aefb5c84943a88209019742e00e76ee2c}{\index{plates.\-c@{plates.\-c}!are\-\_\-new\-\_\-plate\-\_\-chars@{are\-\_\-new\-\_\-plate\-\_\-chars}}
+\index{are\-\_\-new\-\_\-plate\-\_\-chars@{are\-\_\-new\-\_\-plate\-\_\-chars}!plates.c@{plates.\-c}}
+\subsubsection[{are\-\_\-new\-\_\-plate\-\_\-chars}]{\setlength{\rightskip}{0pt plus 5cm}static bool are\-\_\-new\-\_\-plate\-\_\-chars (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{plate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{plates_8c_aefb5c84943a88209019742e00e76ee2c}
+
+
+Definition at line 46 of file plates.\-c.
+
+
+
+References F\-O\-U\-R, is\-\_\-new\-\_\-plate\-\_\-alpha(), T\-H\-R\-E\-E, T\-W\-O, and Z\-E\-R\-O.
+
+
+
+Referenced by is\-\_\-new\-\_\-plate().
+
+\hypertarget{plates_8c_aa07273105744fe166f7692630a61d95e}{\index{plates.\-c@{plates.\-c}!are\-\_\-old\-\_\-plate\-\_\-chars@{are\-\_\-old\-\_\-plate\-\_\-chars}}
+\index{are\-\_\-old\-\_\-plate\-\_\-chars@{are\-\_\-old\-\_\-plate\-\_\-chars}!plates.c@{plates.\-c}}
+\subsubsection[{are\-\_\-old\-\_\-plate\-\_\-chars}]{\setlength{\rightskip}{0pt plus 5cm}static bool are\-\_\-old\-\_\-plate\-\_\-chars (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{plate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{plates_8c_aa07273105744fe166f7692630a61d95e}
+
+
+Definition at line 30 of file plates.\-c.
+
+
+
+References O\-N\-E, T\-W\-O, and Z\-E\-R\-O.
+
+
+
+Referenced by is\-\_\-old\-\_\-plate().
+
 \hypertarget{plates_8c_a852a563847b56fee37d2b95291da9067}{\index{plates.\-c@{plates.\-c}!check\-\_\-plate@{check\-\_\-plate}}
 \index{check\-\_\-plate@{check\-\_\-plate}!plates.c@{plates.\-c}}
 \subsubsection[{check\-\_\-plate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf plate\-\_\-t} check\-\_\-plate (
@@ -45,5 +122,216 @@ Definition at line 58 of file plates.\-c.
 
 
 
-References N\-E\-W\-\_\-\-P\-L\-A\-T\-E, O\-L\-D\-\_\-\-P\-L\-A\-T\-E, and U\-N\-R\-E\-C\-O\-G\-N\-I\-Z\-E\-D.
+References is\-\_\-new\-\_\-plate(), is\-\_\-old\-\_\-plate(), is\-\_\-valid\-\_\-plate(), N\-E\-W\-\_\-\-P\-L\-A\-T\-E, O\-L\-D\-\_\-\-P\-L\-A\-T\-E, and U\-N\-R\-E\-C\-O\-G\-N\-I\-Z\-E\-D.
+
+\hypertarget{plates_8c_a0fffa045e7fe6bf2ae2ebd99b6cb360b}{\index{plates.\-c@{plates.\-c}!is\-\_\-new\-\_\-plate@{is\-\_\-new\-\_\-plate}}
+\index{is\-\_\-new\-\_\-plate@{is\-\_\-new\-\_\-plate}!plates.c@{plates.\-c}}
+\subsubsection[{is\-\_\-new\-\_\-plate}]{\setlength{\rightskip}{0pt plus 5cm}static bool is\-\_\-new\-\_\-plate (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{plate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{plates_8c_a0fffa045e7fe6bf2ae2ebd99b6cb360b}
+
+
+Definition at line 54 of file plates.\-c.
+
+
+
+References are\-\_\-new\-\_\-plate\-\_\-chars(), and S\-E\-V\-E\-N.
+
+
+
+Referenced by check\-\_\-plate().
+
+\hypertarget{plates_8c_a382527283ecc9659d5b942bf5352ec6a}{\index{plates.\-c@{plates.\-c}!is\-\_\-new\-\_\-plate\-\_\-alpha@{is\-\_\-new\-\_\-plate\-\_\-alpha}}
+\index{is\-\_\-new\-\_\-plate\-\_\-alpha@{is\-\_\-new\-\_\-plate\-\_\-alpha}!plates.c@{plates.\-c}}
+\subsubsection[{is\-\_\-new\-\_\-plate\-\_\-alpha}]{\setlength{\rightskip}{0pt plus 5cm}static bool is\-\_\-new\-\_\-plate\-\_\-alpha (
+\begin{DoxyParamCaption}
+\item[{char}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{plates_8c_a382527283ecc9659d5b942bf5352ec6a}
+
+
+Definition at line 42 of file plates.\-c.
+
+
+
+References G, I, O, Q, and U.
+
+
+
+Referenced by are\-\_\-new\-\_\-plate\-\_\-chars().
+
+\hypertarget{plates_8c_a87a862a53715092f7e04604160f4849e}{\index{plates.\-c@{plates.\-c}!is\-\_\-old\-\_\-plate@{is\-\_\-old\-\_\-plate}}
+\index{is\-\_\-old\-\_\-plate@{is\-\_\-old\-\_\-plate}!plates.c@{plates.\-c}}
+\subsubsection[{is\-\_\-old\-\_\-plate}]{\setlength{\rightskip}{0pt plus 5cm}static bool is\-\_\-old\-\_\-plate (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{plate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{plates_8c_a87a862a53715092f7e04604160f4849e}
+
+
+Definition at line 38 of file plates.\-c.
+
+
+
+References are\-\_\-old\-\_\-plate\-\_\-chars(), and E\-I\-G\-H\-T.
+
+
+
+Referenced by check\-\_\-plate().
+
+\hypertarget{plates_8c_a585dcc4a0787ccdba08c3d80f47d553e}{\index{plates.\-c@{plates.\-c}!is\-\_\-valid\-\_\-plate@{is\-\_\-valid\-\_\-plate}}
+\index{is\-\_\-valid\-\_\-plate@{is\-\_\-valid\-\_\-plate}!plates.c@{plates.\-c}}
+\subsubsection[{is\-\_\-valid\-\_\-plate}]{\setlength{\rightskip}{0pt plus 5cm}static bool is\-\_\-valid\-\_\-plate (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{plate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{plates_8c_a585dcc4a0787ccdba08c3d80f47d553e}
+
+
+Definition at line 23 of file plates.\-c.
+
+
+
+References Z\-E\-R\-O.
+
+
+
+Referenced by check\-\_\-plate().
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{plates_8c_a282ba01a8497073d8c8eff05b4f03a35}{\index{plates.\-c@{plates.\-c}!E\-I\-G\-H\-T@{E\-I\-G\-H\-T}}
+\index{E\-I\-G\-H\-T@{E\-I\-G\-H\-T}!plates.c@{plates.\-c}}
+\subsubsection[{E\-I\-G\-H\-T}]{\setlength{\rightskip}{0pt plus 5cm}const int E\-I\-G\-H\-T = 8\hspace{0.3cm}{\ttfamily [static]}}}\label{plates_8c_a282ba01a8497073d8c8eff05b4f03a35}
+
+
+Definition at line 15 of file plates.\-c.
+
+
+
+Referenced by is\-\_\-old\-\_\-plate().
+
+\hypertarget{plates_8c_a155c590b838ec51b170af77c3cf4752b}{\index{plates.\-c@{plates.\-c}!F\-O\-U\-R@{F\-O\-U\-R}}
+\index{F\-O\-U\-R@{F\-O\-U\-R}!plates.c@{plates.\-c}}
+\subsubsection[{F\-O\-U\-R}]{\setlength{\rightskip}{0pt plus 5cm}const int F\-O\-U\-R = 4\hspace{0.3cm}{\ttfamily [static]}}}\label{plates_8c_a155c590b838ec51b170af77c3cf4752b}
+
+
+Definition at line 17 of file plates.\-c.
+
+
+
+Referenced by are\-\_\-new\-\_\-plate\-\_\-chars().
+
+\hypertarget{plates_8c_ad3f36f27e64ed5982c93a5856e2134b5}{\index{plates.\-c@{plates.\-c}!G@{G}}
+\index{G@{G}!plates.c@{plates.\-c}}
+\subsubsection[{G}]{\setlength{\rightskip}{0pt plus 5cm}const char G = 'G'\hspace{0.3cm}{\ttfamily [static]}}}\label{plates_8c_ad3f36f27e64ed5982c93a5856e2134b5}
+
+
+Definition at line 14 of file plates.\-c.
+
+
+
+Referenced by is\-\_\-new\-\_\-plate\-\_\-alpha().
+
+\hypertarget{plates_8c_ab9cfcf92a6915b736872d475dd536aa6}{\index{plates.\-c@{plates.\-c}!I@{I}}
+\index{I@{I}!plates.c@{plates.\-c}}
+\subsubsection[{I}]{\setlength{\rightskip}{0pt plus 5cm}const char I = 'I'\hspace{0.3cm}{\ttfamily [static]}}}\label{plates_8c_ab9cfcf92a6915b736872d475dd536aa6}
+
+
+Definition at line 13 of file plates.\-c.
+
+
+
+Referenced by is\-\_\-new\-\_\-plate\-\_\-alpha().
+
+\hypertarget{plates_8c_ada65313d692e42532499ce96bd3150e7}{\index{plates.\-c@{plates.\-c}!O@{O}}
+\index{O@{O}!plates.c@{plates.\-c}}
+\subsubsection[{O}]{\setlength{\rightskip}{0pt plus 5cm}const char O = 'O'\hspace{0.3cm}{\ttfamily [static]}}}\label{plates_8c_ada65313d692e42532499ce96bd3150e7}
+
+
+Definition at line 12 of file plates.\-c.
+
+
+
+Referenced by is\-\_\-new\-\_\-plate\-\_\-alpha().
+
+\hypertarget{plates_8c_a03732b1f90df5c759962ce41dd8046ac}{\index{plates.\-c@{plates.\-c}!O\-N\-E@{O\-N\-E}}
+\index{O\-N\-E@{O\-N\-E}!plates.c@{plates.\-c}}
+\subsubsection[{O\-N\-E}]{\setlength{\rightskip}{0pt plus 5cm}const int O\-N\-E = 1\hspace{0.3cm}{\ttfamily [static]}}}\label{plates_8c_a03732b1f90df5c759962ce41dd8046ac}
+
+
+Definition at line 20 of file plates.\-c.
+
+
+
+Referenced by are\-\_\-old\-\_\-plate\-\_\-chars().
+
+\hypertarget{plates_8c_a4d06d3a985405e7462b24cd6f56dbe9e}{\index{plates.\-c@{plates.\-c}!Q@{Q}}
+\index{Q@{Q}!plates.c@{plates.\-c}}
+\subsubsection[{Q}]{\setlength{\rightskip}{0pt plus 5cm}const char Q = 'Q'\hspace{0.3cm}{\ttfamily [static]}}}\label{plates_8c_a4d06d3a985405e7462b24cd6f56dbe9e}
+
+
+Definition at line 11 of file plates.\-c.
+
+
+
+Referenced by is\-\_\-new\-\_\-plate\-\_\-alpha().
+
+\hypertarget{plates_8c_a2c23ca53fc5922ec38516328d442c761}{\index{plates.\-c@{plates.\-c}!S\-E\-V\-E\-N@{S\-E\-V\-E\-N}}
+\index{S\-E\-V\-E\-N@{S\-E\-V\-E\-N}!plates.c@{plates.\-c}}
+\subsubsection[{S\-E\-V\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}const int S\-E\-V\-E\-N = 7\hspace{0.3cm}{\ttfamily [static]}}}\label{plates_8c_a2c23ca53fc5922ec38516328d442c761}
+
+
+Definition at line 16 of file plates.\-c.
+
+
+
+Referenced by is\-\_\-new\-\_\-plate().
+
+\hypertarget{plates_8c_a1310f39e29bae777ed061629efde0f8e}{\index{plates.\-c@{plates.\-c}!T\-H\-R\-E\-E@{T\-H\-R\-E\-E}}
+\index{T\-H\-R\-E\-E@{T\-H\-R\-E\-E}!plates.c@{plates.\-c}}
+\subsubsection[{T\-H\-R\-E\-E}]{\setlength{\rightskip}{0pt plus 5cm}const int T\-H\-R\-E\-E = 3\hspace{0.3cm}{\ttfamily [static]}}}\label{plates_8c_a1310f39e29bae777ed061629efde0f8e}
+
+
+Definition at line 18 of file plates.\-c.
+
+
+
+Referenced by are\-\_\-new\-\_\-plate\-\_\-chars().
+
+\hypertarget{plates_8c_a611b700be7e491d94ecc6fc196a6099f}{\index{plates.\-c@{plates.\-c}!T\-W\-O@{T\-W\-O}}
+\index{T\-W\-O@{T\-W\-O}!plates.c@{plates.\-c}}
+\subsubsection[{T\-W\-O}]{\setlength{\rightskip}{0pt plus 5cm}const int T\-W\-O = 2\hspace{0.3cm}{\ttfamily [static]}}}\label{plates_8c_a611b700be7e491d94ecc6fc196a6099f}
+
+
+Definition at line 19 of file plates.\-c.
+
+
+
+Referenced by are\-\_\-new\-\_\-plate\-\_\-chars(), and are\-\_\-old\-\_\-plate\-\_\-chars().
+
+\hypertarget{plates_8c_a90784a38cd61f391acb0d43bac12558d}{\index{plates.\-c@{plates.\-c}!U@{U}}
+\index{U@{U}!plates.c@{plates.\-c}}
+\subsubsection[{U}]{\setlength{\rightskip}{0pt plus 5cm}const char U = 'U'\hspace{0.3cm}{\ttfamily [static]}}}\label{plates_8c_a90784a38cd61f391acb0d43bac12558d}
+
+
+Definition at line 10 of file plates.\-c.
+
+
+
+Referenced by is\-\_\-new\-\_\-plate\-\_\-alpha().
+
+\hypertarget{plates_8c_acdb9580f8c1b2955aa58958261a6c582}{\index{plates.\-c@{plates.\-c}!Z\-E\-R\-O@{Z\-E\-R\-O}}
+\index{Z\-E\-R\-O@{Z\-E\-R\-O}!plates.c@{plates.\-c}}
+\subsubsection[{Z\-E\-R\-O}]{\setlength{\rightskip}{0pt plus 5cm}const int Z\-E\-R\-O = 0\hspace{0.3cm}{\ttfamily [static]}}}\label{plates_8c_acdb9580f8c1b2955aa58958261a6c582}
+
+
+Definition at line 21 of file plates.\-c.
+
+
+
+Referenced by are\-\_\-new\-\_\-plate\-\_\-chars(), are\-\_\-old\-\_\-plate\-\_\-chars(), and is\-\_\-valid\-\_\-plate().
 

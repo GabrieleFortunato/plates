@@ -9,9 +9,8 @@
  */
 
 #include <stdlib.h>
-#include "CUnit/Basic.h"
+#include "CUnit/basic.h"
 #include "plates.h"
-#include <stdio.h>
 
 static const char* UNRECOGNIZED_PLATES = "unrecognized plates";
 static const char* NEW_PLATES = "new plates";
@@ -60,8 +59,6 @@ void test_new_plates(void){
 	for (int i = ZERO; i < sizeof(newPlates) / sizeof(newPlates[ZERO]);)
 		CU_ASSERT_EQUAL(check_plate(newPlates[i++]), NEW_PLATE);
 }
-
-#include <stdio.h>
 
 void test_unr_plates(void){
 	for (int i = ZERO; i < sizeof(unrPlates) / sizeof(unrPlates[ZERO]);)

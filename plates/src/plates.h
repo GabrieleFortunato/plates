@@ -8,12 +8,6 @@
 #ifndef PLATES_H_
 #define PLATES_H_
 
-#include <assert.h>
-#include <ctype.h>
-#include <stdlib.h>
-#include <stdbool.h>
-#include <string.h>
-
 /**
  * Tipo di targa
  */

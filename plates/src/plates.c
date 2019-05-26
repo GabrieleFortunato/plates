@@ -7,18 +7,24 @@
 
 #include "plates.h"
 
+#include <assert.h>
+#include <ctype.h>
+#include <stdbool.h>
+#include <stdlib.h>
+#include <string.h>
+
+static const int ZERO = 0;
+static const int ONE = 1;
+static const int TWO = 2;
+static const int THREE = 3;
+static const int FOUR = 4;
+static const int SEVEN = 7;
+static const int EIGHT = 8;
 static const char U = 'U';
 static const char Q = 'Q';
 static const char O = 'O';
 static const char I = 'I';
 static const char G = 'G';
-static const int EIGHT = 8;
-static const int SEVEN = 7;
-static const int FOUR = 4;
-static const int THREE = 3;
-static const int TWO = 2;
-static const int ONE = 1;
-static const int ZERO = 0;
 
 static bool is_valid_plate(char* plate){
 	bool flag = true;
@@ -39,8 +45,9 @@ static bool is_old_plate(char* plate){
 	return strlen(plate) == EIGHT && are_old_plate_chars(plate);
 }
 
-static bool is_new_plate_alpha(char a){
-	return isalpha(a) && a != G && a != I && a != O && a != Q && a != U;
+static bool is_new_plate_alpha(char plate){
+	return isalpha(plate) && plate != G && plate != I && plate != O
+			&& plate != Q && plate != U;
 }
 
 static bool are_new_plate_chars(char* plate){
